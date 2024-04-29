@@ -8,9 +8,7 @@
 # atvaizduoti visus filmus ir kiek aktorių juose vaidino
 
 # su pitono pagalba: nustatyti kuris nuomos punktas:
+# -- turi daugiau customerių
+# -- išnuomavo daugiau(ir kiek kiekvienas) filmų
+# -- kiek sugeneravo pajamų
 
-#--turi daugiau customerių
-
-#--išnuomavo daugiau(ir kiek kiekvienas) filmų
-
-#--kiek sugeneravo pajamų
