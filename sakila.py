@@ -96,6 +96,15 @@ for row in result:
 
 ##########################################
 # kuris nuomos punktas: išnuomavo daugiau(ir kiek kiekvienas) filmų
+result = sql.readSQL("SELECT s.staff_id, count(r.rental_id) FROM sakila.staff s JOIN sakila.rental r ON s.staff_id = r.staff_id GROUP BY s.staff_id")
+for row in result:
+    print(f"Store ID: {row[0]}, Films rented: {row[1]}")
+
+##########################################
+# kuris nuomos punktas: kiek sugeneravo pajamų
+result = sql.readSQL("SELECT s.staff_id, SUM(p.amount) FROM sakila.staff s JOIN sakila.payment p ON s.staff_id = p.staff_id GROUP BY s.staff_id")
+for row in result:
+    print(f"Store ID: {row[0]}, Revenue generated: {row[1]}")
 
 
 
