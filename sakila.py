@@ -106,5 +106,9 @@ result = sql.readSQL("SELECT s.staff_id, SUM(p.amount) FROM sakila.staff s JOIN 
 for row in result:
     print(f"Store ID: {row[0]}, Revenue generated: {row[1]}")
 
+result = sql.readSQL("SELECT * FROM sakila.payment")
+for row in result:
+        print(result)
+
 
 
